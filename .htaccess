@@ -4,7 +4,7 @@ RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{THE_REQUEST} ^.*/index
-RewriteRule ^(.*)index$ https://koenderks.github.io/koenderks-website$1 [R=301,L]
+RewriteRule ^(.*)index$ https://koenderks.com$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
